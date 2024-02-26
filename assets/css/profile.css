@@ -1,0 +1,71 @@
+
+    
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      
+      .box{
+        height: 1000px;
+        width: 800px;
+        margin-left: 350px;
+        margin-top:100px ;
+        padding-top: 100px;
+        background: rgba(224, 224, 222, 0.5);
+      }
+      
+        h1 {
+          text-align: center;
+        }
+        h2{
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        h3{
+          text-align: center;
+        }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      input[type="file"] {
+        margin-bottom: 20px;
+      }
+      
+      button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3e8e41;
+      }
+      
+      #image-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      #image-container img {
+        max-width: 500px;
+        max-height: 500px;
+      }
+      

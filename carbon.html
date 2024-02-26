@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/carbon.css">
+
+
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+      <!-- Header Start -->
+      <div class="header-area">
+          <div class="main-header ">
+              <div class="header-bottom  header-sticky">
+                  <div class="container-fluid">
+                      <div class="row align-items-center">
+                          <!-- Logo -->
+                          <div class="col-xl-2 col-lg-2">
+                              <div class="logo">
+                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                              </div>
+                          </div>
+                          <div class="col-xl-10 col-lg-10">
+                              <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                  <!-- Main-menu -->
+                                  <div class="main-menu d-none d-lg-block">
+                                      <nav>
+                                          <ul id="navigation">                                                                                          
+                                            <nav>
+                                                <ul id="navigation">                                                                                          
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="carbon.html">Carbon-footprint</a></li>
+                                                    <li><a href="reward.html">Quizes</a></li>
+                                                    <li><a href="about.html">weather</a></li>
+                                                    <li><a href="news.html">News</a>
+    
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                              </li>
+                                          </ul>
+                                      </nav>
+                                  </div>
+                                  <!-- Header-btn -->
+                                  <div class="header-right-btn d-none d-lg-block ml-20">
+                                      <a href="profile.html" class="btn header-btn">Porfile</a>
+                                  </div>
+                              </div>
+                          </div> 
+                          <!-- Mobile Menu -->
+                          <div class="col-12">
+                              <div class="mobile_menu d-block d-lg-none"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Header End -->
+  </header>
+
+    <h1>Carbon Footprint Calculator</h1>
+    <form>
+      <label for="transportation">Transportation method:</label>
+      <select id="transportation">
+        <option value="car">Car</option>
+        <option value="publicTransport">Public transportation</option>
+        <option value="bike">Bike</option>
+        <option value="walk">Walk</option>
+      </select><br><br>
+      
+      <label for="housing">Housing type:</label>
+      <select id="housing">
+        <option value="apartment">Apartment</option>
+        <option value="house">House</option>
+        <option value="offGrid">Off-grid</option>
+      </select><br><br>
+      
+      <label for="food">Food type:</label>
+      <select id="food">
+        <option value="meat">Meat</option>
+        <option value="dairy">Dairy</option>
+        <option value="plantBased">Plant-based</option>
+      </select><br><br>
+      
+      <label for="electricity-usage">Electricity usage (kWh):</label>
+      <input type="number" id="electricity-usage"><br><br>
+      
+      <label for="waste-production">Waste production (kg/week):</label>
+      <input type="number" id="waste-production"><br><br>
+      
+      <input type="button" value="Calculate" onclick="calculateCarbonFootprint()">
+    </form>
+    
+    <p>Your carbon footprint is <span id="carbon-footprint"></span> kgCO2e per year.</p>
+    <script src="assets/js/carbon.js"></script>
+    <footer>
+      <div class="footer-wrapper">
+         <!-- Footer Start-->
+         <div class="footer-area footer-padding">
+             <div class="container ">
+                 <div class="row justify-content-between">
+                     <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
+                         <div class="single-footer-caption mb-50">
+                             <div class="single-footer-caption mb-30">
+                                 <!-- logo -->
+                                 <div class="footer-logo mb-35">
+                                     <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                 </div>
+                                 <div class="footer-tittle">
+                                     <div class="footer-pera">
+                                         <p>There is we are trying to fillup the gap between nature and us.</p>
+                                     </div>
+                                 </div>
+                                 <!-- social -->
+                                 <div class="footer-social">
+                                     <a href="#"><i class="fab fa-twitter"></i></a>
+                                     <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                     <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Our solutions</h4>
+                                 <ul>
+                                     <li><a href="#">Educate Others</a></li>
+                                     <li><a href="#">Applying 3RS rule</a></li>
+                                     <li><a href="#">Planting Tree</a></li>
+                                     <li><a href="#">Conserve Water</a></li>
+                                     <li><a href="#">Switch to Renewable resources</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Company</h4>
+                                 <ul>
+                                     <li><a href="#">About</a></li>
+                                     <li><a href="#">Review</a></li>
+                                     <li><a href="#">Insights</a></li>
+                                     <li><a href="#">Carrier</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-4">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Contact us</h4>
+                                 <ul>
+                                     <li><a href="#">Greenhub07@gmail.com</a></li>
+                                     <li><a href="#">76/A, Green road, NYC</a></li>
+                                     <li><a href="#">Privacy Policy</a></li>
+                                     <li class="number"><a href="#">9919913099</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- footer-bottom area -->
+         <div class="footer-bottom-area">
+             <div class="container">
+                 <div class="footer-border">
+                     <div class="row d-flex align-items-center">
+                         <div class="col-xl-12 ">
+                             <div class="footer-copy-right text-center">
+                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End-->
+        </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" >
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+  </div>
+
+  <!-- JS here -->
+
+  <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+  <!-- Jquery, Popper, Bootstrap -->
+  <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Jquery Mobile Menu -->
+  <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+  <!-- Jquery Slick , Owl-Carousel Plugins -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <!-- One Page, Animated-HeadLin -->
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/animated.headline.js"></script>
+  <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+  <!-- Date Picker -->
+  <script src="./assets/js/gijgo.min.js"></script>
+  <!-- Nice-select, sticky -->
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <script src="./assets/js/jquery.sticky.js"></script>
+  <!-- Progress -->
+  <script src="./assets/js/jquery.barfiller.js"></script>
+  
+  <!-- counter , waypoint,Hover Direction -->
+  <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="./assets/js/waypoints.min.js"></script>
+  <script src="./assets/js/jquery.countdown.min.js"></script>
+  <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+  <!-- contact js -->
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/jquery.form.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/mail-script.js"></script>
+  <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+  
+  <!-- Jquery Plugins, main Jquery -->	
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+  
+</body>
+</html>
